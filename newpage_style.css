@@ -1,0 +1,137 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.category-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.add-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+input[type="text"], input[type="number"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 10px; 
+}
+
+.item input[type="checkbox"] {
+    margin-right: 10px; 
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+.item .item_title {
+    flex-grow: 2; 
+    text-align: left;
+    margin-right: 20px; 
+    font-weight: bold;
+}
+
+.item .item_quantity {
+    flex-grow: 1; 
+    text-align: right;
+    font-weight: normal; 
+}
+
+.item button {
+    flex-shrink: 0;
+    padding: 5px 10px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.item button:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
+.item input {
+    margin-left: 10px;
+}
+
+#clear-items {
+    margin-top: 20px;
+    background-color: #d9534f;
+}
+#clear-items:hover {
+    background-color: #c9302c;
+}
+
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}

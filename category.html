@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newpage_style.css">
+    <title>Товары категории</title>
+</head>
+<body>
+    <img id="category-icon" class="category-icon" alt="Иконка категории">
+    <div class="add-item">
+        <input type="text" id="item-name" placeholder="Название товара">
+        <input type="number" id="item-quantity" placeholder="Количество">
+        <button onclick="addItem()">Добавить</button>
+        <button onclick="goToMain()">На главную</button>
+    </div>
+    <ul id="item-list"></ul>
+    <button id="clear-items" onclick="clearItems()">Удалить все товары</button>
+    <script src="scripts/newpagescript.js"></script>
+
+    <template id="item_template">
+        <li class="item">
+            <input type="checkbox" class="item-checkbox">
+            <h3 class="item_title"></h3>
+            <span class="item_quantity"></span>
+        </li>
+    </template>
+</body>
+</html>
+

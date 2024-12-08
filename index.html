@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Управление списком покупок</title>
+</head>
+<body>
+
+<div class="container auth-container active" id="auth-container" style="display:none;">
+    <h2>Авторизация</h2>
+    <input type="text" id="username" placeholder="Логин" />
+    <input type="password" id="password" placeholder="Пароль" />
+    <button onclick="login()">Войти</button>
+    <p id="error-message">Неверный логин или пароль.</p>
+</div>
+
+<div class="container shopping-list-container" id="shopping-list-container">
+    <div class="header">
+        <a href="" class="icon_profile"><img src="image/2cf4baebf4f912e04efc8f3688c66899 1.jpg" alt="Профиль"></a>
+    </div>
+    <h2 class="list_title">Список покупок</h2>
+    <div  class="category_container">
+    <a href="category.html?category=vegetables" class="icon_category vegetables"><img  src="image/Овощи 1.jpg" alt="Овощи" class="category_picture"></a>
+    <a href="category.html?category=drinks" class="icon_category"><img  src="image/Напитки 3.jpg" alt="Напитки" class="category_picture"></a>
+    <a href="category.html?category=plumbing" class="icon_category plumbing"><img  src="image/Сантехника 1.jpg" alt="Сантехника" class="category_picture"></a>
+    <a href="category.html?category=fastfood" class="icon_category"><img  src="image/Фастфуд 1.jpg" alt="Фастфуд" class="category_picture"></a>
+    <a href="category.html?category=Personal_hygiene" class="icon_category Personal_hygiene"><img src="image/Личная гигиена 1.jpg" alt="Личная гигиена" class="category_picture"></a>
+    <a href="category.html?category=furniture" class="icon_category"><img  src="image/Мебель 2.jpg" alt="Мебель" class="category_picture"></a>
+    <a href="category.html?category=techiques" class="icon_category techiques"><img  src="image/Техника 1.jpg" alt="Техника" class="category_picture"></a>
+    <a href="category.html?category=medicine" class="icon_category"><img src="image/Медицина 1.jpg" alt="Медицина" class="category_picture"></a>
+    </div>
+</div>
+
+<div class="container settings-container" id="settings-container" style="display:none;">
+    <h2>Настройки пользователя</h2>
+    <label for="language">Язык:</label>
+    <select id="language">
+        <option value="ru" selected>Русский</option>
+        <option value="en">English</option>
+    </select>
+    <br><br>
+    <button onclick="saveSettings()">Сохранить настройки</button>
+</div>
+
+<footer>© 2024 Ваш магазин</footer>
+  <script src="scripts/scripts.js"></script>
+  
+</body>
+</html>
