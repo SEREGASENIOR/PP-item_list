@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newpage_style.css">
+    <title>Товары категории</title>
+    <style>
+        .category-icon {
+            width: 120px;
+            height: 120px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .item input {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img id="category-icon" class="category-icon" alt="Иконка категории">
+    <div class="add-item">
+    	<input type="text" id="item-name" placeholder="Название товара">
+    	<input type="number" id="item-quantity" placeholder="Количество">
+    	<button onclick="addItem()">Добавить</button>
+    	<button onclick="goToMain()">На главную</button>
+    	<button onclick="clearAllItems()">Удалить весь список</button>
+    </div>
+
+    <ul id="item-list"></ul>
+    <script src="scripts/newpagescript.js"></script>
+</body>
+</html>
